@@ -9,3 +9,4 @@ services:
       - traefik.enable=true
       - traefik.port=8000
       - traefik.frontend.rule=Host:camo.csvalpha.nl
+      - treafik.backend=camo
