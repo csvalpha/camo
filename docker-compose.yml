@@ -3,6 +3,7 @@ version: '3'
 services:
   camo:
     env_file: .env
+    container_name: camo
     image: inventid/camo
     labels:
       - traefik.enable=true
