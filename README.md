@@ -2,7 +2,7 @@
 [Camo](https://github.com/atmos/camo) is all about making insecure assets look secure. This is an SSL image proxy to prevent mixed content warnings on secure pages served.
 
 # Getting started
-1. ```git clone --recurse-submodules git@github.com:csvalpha/camo.git```
+1. Copy the `docker-compose.yml` to the server (only when not running local)
 2. Put a strong shared secret key in `.env`
 
   ```

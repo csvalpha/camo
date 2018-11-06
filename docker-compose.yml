@@ -3,6 +3,10 @@ version: '3'
 services:
   camo:
     env_file: .env
-    build: ./camo
-    ports:
-      - "8081:8081"
+    container_name: camo
+    image: inventid/camo
+    labels:
+      - traefik.enable=true
+      - traefik.port=8000
+      - traefik.frontend.rule=Host:camo.csvalpha.nl
+      - treafik.backend=camo
